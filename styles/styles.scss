@@ -1,0 +1,37 @@
+// Abstracts (variables, mixins, functions)
+@use "./abstracts/mixins" as m;
+@use "./abstracts/utilities";
+
+// Base / Reset
+@use "./base/reset";
+@use "./base/base";
+
+// Components
+@use "./components/animations";
+@use "./components/attribution";
+@use "./components/button";
+@use "./components/dialog";
+@use "./components/error";
+@use "./components/form";
+@use "./components/icon";
+@use "./components/text";
+
+
+body {
+  @include m.flex(column);
+  background: var(--color-neutral-3);
+}
+
+main {
+  @media screen and (min-width: 60rem) {
+    margin-block: auto;
+  }
+}
+
+footer {
+  margin-block-start: var(--size-md);
+  @media screen and (min-width: 80rem) {
+    margin-block-start: 0;
+  }
+}
+

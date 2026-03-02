@@ -1,0 +1,41 @@
+.text {
+  font-family: "Overpass", sans-serif;
+
+  &--primary {
+    color: var(--color-neutral-0);
+  }
+  &--secondary {
+    color: var(--color-neutral-1);
+  }
+
+  &--small {
+    font-size: var(--fs-sm);
+  }
+  &--medium {
+    font-size: var(--fs-md);
+  }
+  &--large {
+    font-size: var(--fs-lg);
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--regular {
+    font-weight: var(--fw-regular);
+  }
+  &--bold {
+    font-weight: var(--fw-bold);
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 65rem) {
+  .text {
+    text-align: left;
+  }
+}

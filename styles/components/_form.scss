@@ -1,0 +1,22 @@
+@use "../abstracts/mixins" as m;
+
+.form {
+  @include m.flex(column, flex-start);
+  width: clamp(20rem, 100vw, 30rem);
+
+  &__content {
+    @include m.flex(column, flex-start);
+    border: none;
+    border-radius: var(--size-md);
+    width: 100%;
+    height: 100%;
+    padding: var(--size-sm);
+    gap: var(--size-sm);
+    background: var(--color-neutral-2);
+  }
+
+  &__inputs {
+    position: relative;
+    width: 100%;
+  }
+}

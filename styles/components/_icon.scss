@@ -1,0 +1,18 @@
+.icon {
+  &__wrapper {
+    background: var(--color-neutral-0);
+  }
+
+  &--small {
+    width: clamp(0.5rem, calc(0.3rem + 0.3vw), 0.8rem);
+    height: auto;
+  }
+  &--large {
+    width: clamp(1rem, calc(1rem + 1vw), 2.5rem);
+    height: auto;
+  }
+  
+  &--primary {
+    fill: var(--color-primary);
+  }
+}
