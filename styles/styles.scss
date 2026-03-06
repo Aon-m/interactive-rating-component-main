@@ -10,11 +10,11 @@
 @use "./components/animations";
 @use "./components/attribution";
 @use "./components/button";
-@use "./components/dialog";
-@use "./components/error";
 @use "./components/icon";
 @use "./components/text";
 @use "./components/form";
+@use "./components/dialog";
+@use "./components/error";
 
 body {
   @include m.flex(column);

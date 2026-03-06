@@ -17,6 +17,7 @@
 
   &__input {
     border: 0.1rem solid var(--color-error);
+    border-radius: 50%;
     background: transparent;
     z-index: 1;
 
@@ -27,5 +28,10 @@
 
   &__message {
     color: var(--color-error);
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+    transform: translateY(-100%);
+    font-size: clamp(0.8rem, calc(0.8rem + 0.05vw), 1rem);
   }
 }

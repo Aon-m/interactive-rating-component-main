@@ -2,7 +2,7 @@
 
 .form {
   @include m.flex(column);
-  width: clamp(20rem, 100vw, 25rem);
+  width: clamp(20rem, 85vw, 25rem);
   background: var(--color-neutral-2);
   border-radius: var(--size-sm);
   padding: var(--size-sm);
@@ -20,6 +20,8 @@
   &__inputs {
     @include m.flex(row, center, space-between);
     width: 100%;
+    gap: 0.5rem;
+    position: relative;
   }
 
   &__input {
