@@ -1,18 +1,26 @@
+@use "../abstracts/mixins" as m;
+
 .icon {
   &__wrapper {
-    background: var(--color-neutral-0);
+    @include m.flex(row);
+    background: var(--color-neutral-3);
+    padding: 0.5rem;
+    aspect-ratio: 1 / 1;
+    height: fit-content;
+    border-radius: 50%;
+    width: fit-content;
   }
 
   &--small {
-    width: clamp(0.5rem, calc(0.3rem + 0.3vw), 0.8rem);
+    width: clamp(1rem, calc(1rem + 0.3vw), 2rem);
     height: auto;
   }
   &--large {
-    width: clamp(1rem, calc(1rem + 1vw), 2.5rem);
+    width: clamp(10rem, calc(10rem + 1vw), 15rem);
     height: auto;
   }
-  
+
   &--primary {
-    fill: var(--color-primary);
+    color: var(--color-primary);
   }
 }

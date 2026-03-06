@@ -1,11 +1,18 @@
 .text {
   font-family: "Overpass", sans-serif;
 
+  &__description {
+    max-width: 45ch;
+  }
+
   &--primary {
     color: var(--color-neutral-0);
   }
   &--secondary {
     color: var(--color-neutral-1);
+  }
+  &--tertiary {
+    color: var(--color-neutral-4);
   }
 
   &--small {

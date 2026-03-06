@@ -5,13 +5,13 @@
   padding-block-end: var(--size-sm);
 
   &__text {
-    color: var(--color-neutral-8);
+    color: var(--color-neutral-0);
   }
   &__link {
     color: var(--color-primary);
 
     &:hover {
-      color: var(--color-secondary);
+      color: var(--color-neutral-1);
     }
   }
 }

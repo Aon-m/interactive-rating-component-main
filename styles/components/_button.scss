@@ -6,8 +6,8 @@
   border: none;
 
   &--rectangle {
-    border-radius: calc(var(--size-sm) - 1rem);
-    padding-block: calc(var(--size-xs) - 0.3rem);
+    border-radius: calc(var(--size-sm) + 1rem);
+    padding-block: calc(var(--size-xs) + 0.3rem);
 
     @media screen and (min-width: 65rem) {
       padding: var(--size-xs) calc(var(--size-sm) - 0.5rem);
@@ -20,7 +20,6 @@
 
   &--primary {
     background: var(--color-primary);
-    color: var(--color-neutral-3);
 
     &:hover {
       background: var(--color-neutral-0);
@@ -28,7 +27,7 @@
   }
 
   &--secondary {
-    background: var(--color-neutral-2);
+    background: var(--color-neutral-3);
     color: var(--color-neutral-0);
 
     &:hover {
@@ -44,5 +43,13 @@
     &:hover {
       background: var(--color-neutral-0);
     }
+  }
+
+  &--circle {
+    @include m.flex(row);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: var(--size-sm);
   }
 }

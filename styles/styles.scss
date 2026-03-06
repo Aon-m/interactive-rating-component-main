@@ -12,14 +12,13 @@
 @use "./components/button";
 @use "./components/dialog";
 @use "./components/error";
-@use "./components/form";
 @use "./components/icon";
 @use "./components/text";
-
+@use "./components/form";
 
 body {
   @include m.flex(column);
-  background: var(--color-neutral-3);
+  background: var(--color-neutral-4);
 }
 
 main {
@@ -34,4 +33,3 @@ footer {
     margin-block-start: 0;
   }
 }
-
