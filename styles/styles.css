@@ -237,12 +237,12 @@ body {
 .form__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   border: none;
   width: 100%;
   height: 100%;
-  gap: var(--size-md);
+  gap: var(--size-sm);
 }
 .form__inputs {
   display: flex;
@@ -255,20 +255,6 @@ body {
 }
 .form__input--button {
   display: none;
-}
-.form__legend {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--size-sm);
-}
-.form__text-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--size-sm);
 }
 .form__output {
   color: var(--color-primary);

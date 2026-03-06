@@ -31,33 +31,32 @@
   </head>
   <body>
     <main>
+      <h1 class="sr-only">Interactive Rating Component</h1>
       <form class="form" aria-labelledby="form-heading">
         <fieldset class="form__content">
-          <div class="form__text-content">
-            <h1 class="sr-only" id="form-heading">Feedback Rating</h1>
-            <legend class="form__legend">
-              <div class="icon__wrapper">
-                <svg
-                  class="icon icon--primary icon--small"
-                  viewBox="0 0 17 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-              <h2 class="text text--primary text--medium text--bold">
-                How did we do?
-              </h2>
-            </legend>
-            <p class="text text--secondary text--small text--regular">
-              Please let us know how we did with your support request. All
-              feedback is appreciated to help us improve our offering!
-            </p>
+          <legend id="form-heading" class="sr-only">
+            Feedback Rating Form
+          </legend>
+          <h2 class="text text--primary text--medium text--bold">
+            How did we do?
+          </h2>
+          <div class="icon__wrapper">
+            <svg
+              class="icon icon--primary icon--small"
+              viewBox="0 0 17 16"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+                fill="currentColor"
+              />
+            </svg>
           </div>
+          <p class="text text--secondary text--small text--regular">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
           <div class="form__inputs">
             <p class="error__message text text--bold hidden">Select a rating</p>
             <label

@@ -32,7 +32,7 @@ class FormController {
   select(button) {
     this.view.fixedError();
     this.view.select(button);
-    this.rating = button.textContent.trim();
+    this.rating = Number(button.textContent.trim());
   }
 
   open() {
@@ -46,7 +46,7 @@ class FormController {
   submit() {
     if (!this.validation()) return;
 
-    let rating = Number(this.rating);
+    const rating = Number(this.rating);
 
     this.view.push(rating);
 

@@ -10,11 +10,11 @@
   position: relative;
 
   &__content {
-    @include m.flex(column);
+    @include m.flex(column, flex-start);
     border: none;
     width: 100%;
     height: 100%;
-    gap: var(--size-md);
+    gap: var(--size-sm);
   }
 
   &__inputs {
@@ -28,16 +28,6 @@
     &--button {
       display: none;
     }
-  }
-
-  &__legend {
-    @include m.flex(column, flex-start);
-    gap: var(--size-sm);
-  }
-
-  &__text-content {
-    @include m.flex(column, flex-start);
-    gap: var(--size-sm);
   }
 
   &__output {
