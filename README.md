@@ -31,21 +31,31 @@ Users should be able to:
 ### Screenshot
 
 <div
-  style="display: flex; align-items: flex-start; height: 400px; padding-bottom: 2rem;">
-  <figure style="margin: 0; width: 50%; height: 100%; text-align: center;">
+  style="
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    gap:2rem;
+    padding-bottom:2rem;
+  "
+>
+  <figure style="margin:0; flex:1; text-align:center;">
     <figcaption>Preview</figcaption>
     <img
       src="./previews/preview.jpeg"
       alt="An image showing the interactive rating component"
-      style="height: 100%; border-right: 1px solid #808080; padding-right: 1em;"/>
+      style="width:100%; border-right:1px solid #808080;"
+    />
   </figure>
-  <figure style="margin: 0; height: 100%; width: 50%; text-align: center;">
-      <figcaption>Completed preview</figcaption>
-      <img
-        src="./previews/completed-preview.jpeg"
-        alt="An image showing the success dialog upon form completion"
-        style="width: 90%;"/>
-    </figure>
+
+  <figure style="margin:0; flex:1; text-align:center;">
+    <figcaption>Completed</figcaption>
+    <img
+      src="./previews/completed-preview.jpeg"
+      alt="An image showing the success dialog upon form completion"
+      style="width:100%;"
+    />
+  </figure>
 </div>
 
 ### Links
